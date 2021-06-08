@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :book_comments,only: [:create, :destory]
     resource :favorites,only: [:create, :destroy]
   end
+  get 'search' => 'search#search'
 
 end
